@@ -25,7 +25,9 @@
                                 </ul>
                             </li>
                         -->
-                            <li class="scroll-to-section"><a href="#menu">Menu</a></li>
+                            <li class="scroll-to-section">
+                              <nuxt-link to="/blog">Blog</nuxt-link>
+                            </li>
                             <li class="scroll-to-section">
                               <NuxtLink to="/posts" >Posts</NuxtLink>
                             </li>
