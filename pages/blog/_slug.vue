@@ -1,6 +1,8 @@
 <template>
   <article>
-    <nuxt-content :document="article" />
+    <div class="container">
+      <nuxt-content :document="article" />
+    </div>
   </article>
 
 </template>
@@ -15,5 +17,17 @@ export default {
 </script>
 
 <style>
+article{
+  display: block;
+  margin: 0 auto;
+  padding: 100px 50px 30px;
+  max-width: 800px;
+}
+
+h1{
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
 
 </style>
