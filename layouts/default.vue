@@ -17,6 +17,9 @@ export default {
 </script>
 
 <style>
+h1{
+  margin: 15px 0;
+}
 h3{
   color: blue;
 }

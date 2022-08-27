@@ -40,7 +40,6 @@
   export default {
     data() {
       return {
-        id: this.$route.params.id,
         posts: [
           {
             id: 'fst',

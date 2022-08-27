@@ -1,5 +1,4 @@
 <template>
-  <section style="padding-top: 100px;" class="section" id="post">
     <div class="container">
       <div class="row">
         <article>
@@ -9,10 +8,11 @@
             {{post.content}}
           </p>
         </article>
+
         <aside>
           <h3>Posts you may might enjoy</h3>
           <ul>
-            <li v-for="related in relatedPosts">
+            <li v-for="related in relatedPosts" :key="related.id">
               <!--<a :href="`/posts/${related.id}`">{{related.title}}</a>-->
               <!--<nuxt-link :to="`/posts/${related.id}`"> -->
               <nuxt-link :to="{name: 'posts-id', params: {id: related.id}}">
@@ -23,7 +23,6 @@
         </aside>
       </div>
     </div>
-  </section>
 </template>
 
 <script>
@@ -73,3 +72,9 @@
   }
 
 </script>
+
+<style scoped>
+article{
+  max-width: 70%;
+}
+</style>

@@ -20,7 +20,11 @@
               </div>
             </div>
 
-        </div>
+          </div>
+          <div v-if="error" class="text-red-700">
+            <ErrorAlert :message="error.message" />
+            {{ error.message }}
+          </div>
       </div>
     </div>
   </div>
@@ -32,11 +36,17 @@ import axios from 'axios';
 export default {
 
   async asyncData(){
-    const api = 'https://api.nuxtjs.dev/planets'
-    const planets = await axios.get(api).then((response) => {
+    try {
+      const api = 'https://api.nuxtjs.dev/planets'
+      const planets = await axios.get(api).then((response) => {
       return response.data
     })
     return { planets }
+
+    } catch (error) {
+      return { error }
+    }
+
   }
 
 }
