@@ -6,18 +6,18 @@
           Create an Account
         </div>
         <div class="card-body">
-          <form @submit.prevent="userLogin">
+          <form @submit.prevent="registerUser">
             <div class="form-group mb-3">
               <label for="">Name</label>
-              <input type="text" class="form-control" name="name" v-model="login.email" placeholder="Your Name">
+              <input type="text" class="form-control" name="name" v-model="registerForm.name" placeholder="Your Name">
             </div>
             <div class="form-group mb-3">
               <label for="">Email</label>
-              <input type="text" class="form-control" name="email" v-model="login.email" placeholder="Your Email">
+              <input type="text" class="form-control" name="email" v-model="registerForm.email" placeholder="Your Email">
             </div>
             <div class="form-group mb-3">
               <label for="">Password</label>
-              <input type="password" class="form-control" name="password" v-model="login.password" placeholder="Password">
+              <input type="password" class="form-control" name="password" v-model="registerForm.password" placeholder="Password">
             </div>
             <div class="form-group d-flex justify-content-between align-items-center">
               <button type="submit" class="btn btn-success">Create</button>
@@ -34,17 +34,19 @@
 
 <script>
   export default {
+    auth: 'guest',
     data(){
       return {
-        login: {
-          email: 'admin@gmail.com',
-          password: '12345678'
+        registerForm: {
+          name: '',
+          email: '',
+          password: ''
         }
 
       }
     },
     methods: {
-      async userLogin() {
+      async registerUser() {
         try {
           let response = await this.$auth.loginWith('local', { data: this.login })
           console.log(response)

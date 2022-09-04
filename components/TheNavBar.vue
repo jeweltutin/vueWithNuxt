@@ -31,8 +31,11 @@
                             <li class="scroll-to-section">
                               <NuxtLink to="/posts" >Posts</NuxtLink>
                             </li>
+                            <li class="scroll-to-section" v-if="loggedIn">
+                              <NuxtLink :to="{name: 'dashboard'}" >Dashboard</NuxtLink>
+                            </li>
                             <li class="submenu">
-                                <a href="javascript:;">Features</a>
+                                <a href="javascript:;">API</a>
                                 <ul>
                                     <li><a href="#">Features Page 1</a></li>
                                     <li><a href="#">Features Page 2</a></li>
@@ -42,7 +45,8 @@
                             </li>
                             <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
                             <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li>
-                            <li class="scroll-to-section"><nuxt-link :to="{name: 'login'}">Login</nuxt-link> </li>
+                            <li class="scroll-to-section" v-if="!loggedIn"><nuxt-link :to="{name: 'login'}">Login</nuxt-link> </li>
+                            <li class="scroll-to-section" v-if="!loggedIn"><nuxt-link :to="{name: 'register'}">Register</nuxt-link> </li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -61,6 +65,12 @@ import NuxtLogo from "./NuxtLogo.vue";
 export default{
   components: {
     NuxtLogo
+  },
+  computed: {
+    loggedIn(){
+      return this.$auth.loggedIn;   // Access using auth
+      //return this.$store.state.auth.loggedIn;   //// Access using vuex
+    }
   }
 }
 </script>

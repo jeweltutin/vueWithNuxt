@@ -155,19 +155,26 @@ export default {
     strategies: {
       local: {
         token: {
-          property: 'token',
+          property: 'access_token',
           global: true,
           // required: true,
           // type: 'Bearer'
         },
         user: {
-          property: 'user',
+          //property: 'user',
+          property: false,
           // autoFetch: true
         },
         endpoints: {
           login: { url: '/auth/login', method: 'post' },
           logout: { url: '/auth/logout', method: 'post' },
           user: { url: '/auth/me', method: 'post' }
+        },
+        redirect: {
+          login: '/login',
+          logout: '/',
+          callback: '/login',
+          home: '/dashboard'
         }
       }
     }
