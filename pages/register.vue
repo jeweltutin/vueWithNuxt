@@ -20,8 +20,8 @@
               <input type="password" class="form-control" name="password" v-model="registerForm.password" placeholder="Password">
             </div>
             <div class="form-group d-flex justify-content-between align-items-center">
-              <button type="submit" class="btn btn-success">Create</button>
-              <nuxt-link :to="{ name: 'login' }">Login</nuxt-link>
+                <button type="submit" class="btn btn-success">Create an account</button>
+                <nuxt-link :to="{ name: 'login' }">Account Login</nuxt-link>
             </div>
           </form>
         </div>
@@ -48,8 +48,10 @@
     methods: {
       async registerUser() {
         try {
-          let response = await this.$auth.loginWith('local', { data: this.login })
-          console.log(response)
+          let data = await this.$axios.$post('auth/register', this.registerForm);
+          console.log(data)
+
+          await this.$auth.setUserToken(data.access_token);
         } catch (err) {
           console.log(err)
         }
