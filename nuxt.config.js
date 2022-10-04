@@ -39,7 +39,7 @@ export default {
     ],
     script:[
       {
-        src: "/assets/js/jquery-3.6.0.min.js",
+        src: "/assets/js/jquery-2.1.0.min.js",
         type: "text/javascript",
         body: true,
         ssr: false,
@@ -134,6 +134,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/vform.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

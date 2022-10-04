@@ -33,6 +33,8 @@
   }
   </script>
 
-  <style>
-
+  <style scoped>
+    body{
+      padding-top: 110px!important;
+    }
   </style>
