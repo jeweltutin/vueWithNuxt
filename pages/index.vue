@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
         </div>
-        <img src="assets/images/slide-02.jpg" alt="" />
+        <img style="width:100%;" src="assets/images/slide-02.jpg" alt="" />
     </div>
 
     <!-- ***** About Area Starts ***** -->

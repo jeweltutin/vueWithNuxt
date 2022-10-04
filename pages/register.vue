@@ -54,9 +54,10 @@
         try {
           //let data = await this.$axios.$post('auth/register', this.registerForm);
           let data = await this.registerForm.post('auth/register');
-          console.log(data)
+          //console.log(data);
+          console.log(data.data.access_token);
 
-          await this.$auth.setUserToken(data.access_token);
+          await this.$auth.setUserToken(data.data.access_token);
         } catch (err) {
           console.log(err)
         }
