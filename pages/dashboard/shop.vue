@@ -1,8 +1,10 @@
 <template>
-<section class="section" id="post">
+<div class="card">
     <div class="container">
-        <div class="row">
-            <h1 class="title">Shop</h1>
+      <div class="card-header">
+        Profile
+      </div>
+      <div class="card-body">
             <table>
                 <tr>
                     <th>Id</th>
@@ -30,7 +32,7 @@
             {{ msg }}
         </div>
     </div>
-</section>
+  </div>
 </template>
 
 <script>
