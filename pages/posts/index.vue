@@ -96,7 +96,7 @@
 }
 
 table td {
-  border: 1px solid red;
+  border: 1px solid #a1a1;
   padding: 20px;
 }
 </style>
