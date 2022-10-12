@@ -47,9 +47,14 @@ export default {
       try {
           //let response = await this.$auth.loginWith('local', { data: this.login })
           let response  = await this.profile_data.post('/auth/profile');
+          this.profile_data.password = '';
           await this.$auth.fetchUser();
           //console.log(response);
           //console.log(response.access_token)
+          this.$toast.success({
+              title:'Success',
+              message:'Profile updated Successfully.'
+          })
         } catch (err) {
           console.log(err)
         }

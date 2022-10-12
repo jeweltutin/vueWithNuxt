@@ -58,6 +58,11 @@
           console.log(data.data.access_token);
 
           await this.$auth.setUserToken(data.data.access_token);
+
+          this.$toast.success({
+              title:'Success',
+              message:'Registration Successfull!'
+          })
         } catch (err) {
           console.log(err)
         }

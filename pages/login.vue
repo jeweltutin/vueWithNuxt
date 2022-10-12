@@ -57,6 +57,10 @@
           console.log(response.data.access_token);
           await this.$auth.setUserToken(response.data.access_token);
           //console.log(response.access_token)
+          this.$toast.success({
+              title:'Success',
+              message:'Welcome to website'
+          })
         } catch (err) {
           console.log(err)
         }

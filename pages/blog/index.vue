@@ -3,7 +3,7 @@
     <div class="container">
       <h2>Latest Posts</h2>
       <div class="articles">
-        <div class="article" v-for="article of articles" :key="article">
+        <div class="article" v-for="article of articles" :key="article.id">
           <nuxt-link :to="{ name: 'blog-slug', params: { slug: article.slug } }">
           <div class="article-inner">
               <!-- <img src="assets/blog/blog-2.jpg" alt="" /> -->

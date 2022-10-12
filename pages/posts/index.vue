@@ -21,7 +21,7 @@
               {{ post.id }}
             </td>
             <td width="300px">
-              <nuxt-link :to="{name: 'posts-id', params: {id: post.id}}">
+              <nuxt-link :to="{name: 'posts-id', params: {id: post.slug}}">
                 {{ post.title }}
               </nuxt-link>
             </td>
@@ -43,21 +43,25 @@
         posts: [
           {
             id: 'fst',
+            slug: 'first-title',
             title: 'First Title',
             content: 'This article is focused on laravel 9 flash message example. you will learn how to implement flash message in laravel 9.Here you will learn laravel 9 flash message from the controller. This tutorial will give you a simple example of laravel 9 flash message notification'
           },
           {
             id: '2',
+            slug: 'second-title',
             title: 'Second Title',
             content: 'This article is focused on laravel 9 flash message example. you will learn how to implement flash message in laravel 9.Here you will learn laravel 9 flash message from the controller. This tutorial will give you a simple example of laravel 9 flash message notification'
           },
           {
             id: '3',
+            slug: 'third-title',
             title: 'Third Title',
             content: 'This article is focused on laravel 9 flash message example. you will learn how to implement flash message in laravel 9.Here you will learn laravel 9 flash message from the controller. This tutorial will give you a simple example of laravel 9 flash message notification'
           },
           {
             id: '4',
+            slug: 'fifth-title',
             title: 'Forth Title',
             content: 'This article is focused on laravel 9 flash message example. you will learn how to implement flash message in laravel 9.Here you will learn laravel 9 flash message from the controller. This tutorial will give you a simple example of laravel 9 flash message notification'
           }

@@ -56,72 +56,72 @@ export default {
         body: true,
         ssr: false,
       },
-      {
-        src: "/assets/js/owl-carousel.js",
-        type: "text/javascript",
-        body: true,
-        ssr: false,
-      },
-      {
-        src: "/assets/jsaccordions.js",
-        type: "text/javascript",
-        body: true,
-        ssr: false,
-      },
-      {
-        src: "/assets/js/datepicker.js",
-        type: "text/javascript",
-        body: true,
-        ssr: false,
-      },
-      {
-        src: "/assets/js/scrollreveal.min.js",
-        type: "text/javascript",
-        body: true,
-        ssr: false,
-      },
-      {
-        src: "/assets/js/waypoints.min.js",
-        type: "text/javascript",
-        body: true,
-        ssr: false,
-      },
-      {
-        src: "/assets/js/jquery.counterup.min.js",
-        type: "text/javascript",
-        body: true,
-        ssr: false,
-      },
-      {
-        src: "/assets/js/imgfix.min.js",
-        type: "text/javascript",
-        body: true,
-        ssr: false,
-      },
-      {
-        src: "/assets/js/slick.js",
-        type: "text/javascript",
-        body: true,
-        ssr: false,
-      },
-      {
-        src: "/assets/js/lightbox.js",
-        type: "text/javascript",
-        body: true,
-        ssr: false,
-      },
-      {
-        src: "/assets/js/isotope.js",
-        type: "text/javascript",
-        body: true,
-        ssr: false,
-      },
-      {
-        src: "/assets/js/custom.js",
-        type: "text/javascript",
-        body: true,
-        ssr: false,
-      },
+      // {
+      //   src: "/assets/js/owl-carousel.js",
+      //   type: "text/javascript",
+      //   body: true,
+      //   ssr: false,
+      // },
+      // {
+      //   src: "/assets/jsaccordions.js",
+      //   type: "text/javascript",
+      //   body: true,
+      //   ssr: false,
+      // },
+      // {
+      //   src: "/assets/js/datepicker.js",
+      //   type: "text/javascript",
+      //   body: true,
+      //   ssr: false,
+      // },
+      // {
+      //   src: "/assets/js/scrollreveal.min.js",
+      //   type: "text/javascript",
+      //   body: true,
+      //   ssr: false,
+      // },
+      // {
+      //   src: "/assets/js/waypoints.min.js",
+      //   type: "text/javascript",
+      //   body: true,
+      //   ssr: false,
+      // },
+      // {
+      //   src: "/assets/js/jquery.counterup.min.js",
+      //   type: "text/javascript",
+      //   body: true,
+      //   ssr: false,
+      // },
+      // {
+      //   src: "/assets/js/imgfix.min.js",
+      //   type: "text/javascript",
+      //   body: true,
+      //   ssr: false,
+      // },
+      // {
+      //   src: "/assets/js/slick.js",
+      //   type: "text/javascript",
+      //   body: true,
+      //   ssr: false,
+      // },
+      // {
+      //   src: "/assets/js/lightbox.js",
+      //   type: "text/javascript",
+      //   body: true,
+      //   ssr: false,
+      // },
+      // {
+      //   src: "/assets/js/isotope.js",
+      //   type: "text/javascript",
+      //   body: true,
+      //   ssr: false,
+      // },
+      // {
+      //   src: "/assets/js/custom.js",
+      //   type: "text/javascript",
+      //   body: true,
+      //   ssr: false,
+      // },
     ],
 
   },
@@ -134,7 +134,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/vform.js'
+    '~/plugins/vform.js',
+    '~/plugins/toast.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
