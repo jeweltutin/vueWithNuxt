@@ -24,6 +24,9 @@
               <button type="submit" class="btn btn-success" :disabled="login.busy">Login</button>
               <nuxt-link :to="{ name: 'register' }">Don't have account? Signup now</nuxt-link>
             </div>
+            <div class="mt-3">
+              <nuxt-link :to="{ name: 'forgot-password' }">Forgot Password?</nuxt-link>
+            </div>
           </form>
         </div>
       </div>

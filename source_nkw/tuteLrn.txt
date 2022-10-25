@@ -1,0 +1,22 @@
+https://vuejs.org/tutorial/#step-1
+
+https://nuxtjs.org/docs/get-started/installation
+
+https://vueschool.io/courses/nuxtjs-fundamentals
+
+
+https://nuxtjs.org/tutorials/creating-blog-with-nuxt-content/
+https://content.nuxtjs.org/get-started/#render-pages            // Content nuxt3
+https://content.nuxtjs.org/v1/getting-started/installation/     // nuxtjs
+https://www.markdownguide.org/basic-syntax
+
+
+https://www.youtube.com/watch?v=1SAZMFwYUDE&ab_channel=TylerPotts   //Build a BLOG Using NUXT JS & The CONTENT module
+
+//API data show Nuxtjs
+https://www.youtube.com/watch?v=N9iSyc2tews&ab_channel=DebbieO%27Brien
+https://www.youtube.com/watch?v=ELST3NG1Mhw&ab_channel=Cleavr
+
+
+//Data Fetching Nuxtjs
+https://nuxtjs.org/docs/features/data-fetching/

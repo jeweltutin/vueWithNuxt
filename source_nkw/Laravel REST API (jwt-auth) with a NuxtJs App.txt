@@ -1,0 +1,23 @@
+//Laravel & Nuxt Authentication Series
+https://www.youtube.com/playlist?list=PLXuHNPzyZJcHgqxdy3PY9MyEZ7jy9feOv   // project working
+
+
+nuxt auth package
+https://auth.nuxtjs.org/
+
+npm install --save-exact @nuxtjs/auth-next
+npm install @nuxtjs/axios
+
+
+
+//jwt-auth
+JSON Web Token Authentication for Laravel & Lumen
+https://jwt-auth.readthedocs.io/en/docs/laravel-installation/      // Worked
+
+//Implementing JWT authentication in Laravel 9
+https://blog.logrocket.com/implementing-jwt-authentication-laravel-9/
+
+
+Error
+"message": "Method Illuminate\\Auth\\SessionGuard::factory does not exist.",
+https://stackoverflow.com/questions/63647007/message-method-illuminate-auth-sessionguardfactory-does-not-exist
