@@ -6,7 +6,7 @@
                   Reset Password
               </div>
               <div class="card-body">
-                  <form @submit.prevent="sendPasswordResetEmail" @keydown="resetPassword.onKeydown($event)">
+                  <form @submit.prevent="resetThePassword" @keydown="resetPassword.onKeydown($event)">
                       <div class="form-group mb-3">
                           <label for="">Enter Email </label>
                           <input type="text" v-model="resetPassword.email" class="form-control" name="email" placeholder="Enter email" :class="{ 'is-invalid': resetPassword.errors.has('email') }">
@@ -51,7 +51,7 @@ export default {
       }
   },
   methods: {
-      async sendPasswordResetEmail() {
+      async resetThePassword() {
           try {
               await this.resetPassword.post('/auth/password/reset');
               this.$toast.success({
